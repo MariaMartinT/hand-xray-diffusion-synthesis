@@ -15,6 +15,14 @@ Severe hand-osteoarthritis (OA) cases are rare — KL grades 3–4 are only ~2.5
 - **Two generators compared:** a CycleGAN baseline and a KL-conditioned **Latent Diffusion Model (LDM)** at 64×64 and 180×180.
 - **Headline finding:** generating severity **progressively** (KL 0→2→3→4) beats generating each grade standalone — FID for severe KL4 drops from **187.7 → 114.0**, and a held-out classifier recognizes synthetic **KL4** images **37% → 80%** of the time.
 
+## Team & contributions
+
+A three-person project for MET CS 790. Responsibilities split across the pipeline:
+
+- **Maria Martin** — Designed and implemented the **conditional Latent Diffusion Model** (VAE encoder/decoder, KL-grade-conditioned U-Net denoiser, DDPM noise schedule) to synthesize DIP joint X-rays at 64×64 and 180×180, targeting the rare KL 3–4 severity classes — including the **progressive generation** scheme that produced this project's headline result (notebooks `G3_Step3_LDM_64` and `G3_Step4_LDM_180`).
+- **Jai Sharma** — Data preprocessing pipeline and the CycleGAN baseline (`G3_Step1`, `G3_Step2`).
+- **Zulal Akarsu** (team lead) — Preliminary data analysis, the evaluation framework, and final evaluation/ablations (`G3_Step0`, `G3_Step5`, `G3_Step6`).
+
 ## Results
 
 ### Generated samples (conditional Latent Diffusion)
