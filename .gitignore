@@ -1,0 +1,33 @@
+# ── Data (large / private — do NOT commit) ─────────────────────────
+data/raw/
+data/processed/
+data/splits/
+data/joint-samples/
+*.zip
+*.xlsx
+*.csv
+
+# ── Model checkpoints & generated outputs (large binaries) ─────────
+models/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+cyclegan_outputs/
+diffusion_outputs/
+eval_results/
+
+# ── Notebook / Python cruft ────────────────────────────────────────
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ── OS / editor ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

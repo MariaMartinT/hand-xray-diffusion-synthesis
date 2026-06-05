@@ -1,0 +1,12 @@
+torch
+torchvision
+einops
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+Pillow
+openpyxl
+tqdm
+pytorch-fid
