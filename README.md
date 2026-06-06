@@ -10,7 +10,7 @@ We judged it two ways: whether the generated images look real (FID), and whether
 
 ## My part
 
-This was a three-person project. I built the diffusion side — a KL-grade-conditioned **Latent Diffusion Model** (a VAE plus a U-Net denoiser that takes the KL grade as a condition, with a DDPM schedule) that generates DIP joint X-rays at 64x64 and 180x180, aimed at the rare KL 3 and KL 4 grades. My teammates built the CycleGAN baseline and the shared evaluation framework.
+This was a three-person project that I co-led. I owned the most technically demanding part — the diffusion model: a KL-grade-conditioned **Latent Diffusion Model** (a VAE plus a U-Net denoiser that takes the KL grade as a condition, with a DDPM schedule) that generates DIP joint X-rays at 64x64 and 180x180, targeting the rare KL 3 and KL 4 grades. My teammates built the CycleGAN baseline and the shared evaluation framework.
 
 The most interesting result came from generating severity *progressively* — starting from a healthy joint and worsening it step by step (KL 0 to 2 to 3 to 4) instead of generating each grade from scratch.
 
